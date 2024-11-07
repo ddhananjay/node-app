@@ -7,7 +7,7 @@ pipeline {
                 npm 'default'
         }
     environment {
-            LANGUAGE = 'node'
+            LANGUAGE = 'nodejs'
             AWS_REGION = 'us-east-2'
             EKS_CLUSTER_NAME = 'alphatech-cluster'
             DOCKER_USER_NAME = "dhananjay01"
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 echo timestampedEcho('test')
                 echo 'Clone repository'
-                git 'git@github.com:ddhananjay/jenkins-my-app.git'
+                git 'git@github.com:ddhananjay/node-app.git'
             }
         }
          stage('Test Spring Boot Application') {
