@@ -4,11 +4,10 @@ pipeline {
     agent any
     tools {
                 git 'my'
-                nodejs 'Node23'
         }
     environment {
             NODE_HOME = tool name: 'Node23', type: 'NodeJS' // Match this with your actual configured name
-             PATH = "${NODE_HOME}/bin:${env.PATH}"
+             PATH = "/opt/homebrew/Cellar/node/23.1.0_1/bin:${env.PATH}"
             LANGUAGE = 'nodejs'
             AWS_REGION = 'us-east-2'
             EKS_CLUSTER_NAME = 'alphatech-cluster'
