@@ -4,7 +4,7 @@ pipeline {
     agent any
     tools {
                 git 'my'
-                nodejs "Node22"
+                nodejs 'Node22'
         }
     environment {
             NODE_HOME = tool name: 'Node22', type: 'NodeJS' // Match this with your actual configured name
