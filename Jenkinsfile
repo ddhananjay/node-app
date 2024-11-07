@@ -4,7 +4,6 @@ pipeline {
     agent any
     tools {
                 git 'my'
-                nodejs 'default'
         }
     environment {
             NODE_HOME = tool name: 'nodejs', type: 'NodeJS' // Use the exact name you configured
