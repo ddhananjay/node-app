@@ -4,7 +4,7 @@ pipeline {
     agent any
     tools {
                 git 'my'
-                node 'default'
+                nodejs 'default'
         }
     environment {
             LANGUAGE = 'nodejs'
