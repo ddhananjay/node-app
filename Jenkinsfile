@@ -6,7 +6,7 @@ pipeline {
                 git 'my'
         }
     environment {
-            NODE_HOME = tool name: 'nodejs', type: 'NodeJS' // Use the exact name you configured
+            NODE_HOME = tool name: 'Node22', type: 'NodeJS' // Use the exact name you configured
             PATH = "${NODE_HOME}/bin:${env.PATH}"
             LANGUAGE = 'nodejs'
             AWS_REGION = 'us-east-2'
