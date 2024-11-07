@@ -4,10 +4,10 @@ pipeline {
     agent any
     tools {
                 git 'my'
-                nodejs 'Node22'
+                nodejs 'Node23'
         }
     environment {
-            NODE_HOME = tool name: 'Node22', type: 'NodeJS' // Match this with your actual configured name
+            NODE_HOME = tool name: 'Node23', type: 'NodeJS' // Match this with your actual configured name
              PATH = "${NODE_HOME}/bin:${env.PATH}"
             LANGUAGE = 'nodejs'
             AWS_REGION = 'us-east-2'
