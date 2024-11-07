@@ -22,11 +22,6 @@ pipeline {
        }
 
     stages {
-        stage('Build') { 
-            steps {
-                sh 'npm install' 
-            }
-        }
         stage("clone") {
             steps {
                 echo timestampedEcho('test')
