@@ -6,8 +6,8 @@ pipeline {
                 git 'my'
         }
     environment {
-            NODE_HOME = tool name: 'Node22', type: 'NodeJS' // Use the exact name you configured
-            PATH = "${NODE_HOME}/bin:${env.PATH}"
+            NODE_HOME = tool name: 'Node22', type: 'NodeJS' // Match this with your actual configured name
+             PATH = "${NODE_HOME}/bin:${env.PATH}"
             LANGUAGE = 'nodejs'
             AWS_REGION = 'us-east-2'
             EKS_CLUSTER_NAME = 'alphatech-cluster'
